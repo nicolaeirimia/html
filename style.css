@@ -8,6 +8,23 @@ body{
     position: relative;
     padding-top: 100px;
 }
+.middle_container{
+    position: relative;
+    background-color: #ffda77;
+    padding-top: 0;
+}
+.bottom_container{
+    position: relative;
+    background-color: #ffa45b;
+}
+#credits{
+    padding-top: 15px;
+    margin-top: 0;
+    margin-bottom:0;
+}
+#skills_title{
+    margin-top: 0;
+}
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -92,6 +109,10 @@ p{
 #mihnea_img{
     top: 9%;
     right: 12%;
+}
+.skill-row{
+    width: 100%;
+    height: auto;
 }
 .skill_img{
     width: 15%;

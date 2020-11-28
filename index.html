@@ -12,8 +12,8 @@
   <div class="navbar">
     <a href="#" class="active">Home</a>
     <a href="https://www.fiverr.com/share/yWQXoZ">Hire us</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </div>
   <br>
     <div class="top_container">
@@ -30,9 +30,9 @@
         <img src="zara.png" alt="Mihnea" class="dev_img" id="mihnea_img">
         <img src="parallax.png" alt="parallax_img" class="parallax_img">
     </div>
-    <div class="middle-container">
+    <div class="middle_container">
         <div class="skills">
-          <h2>Our Skills</h2>
+          <h2 id="skills_title">Our Skills</h2>
           <div class="skill-row">
             <img class="skill_img" src="computer.png" alt="computer-image">
             <h3>HTML CSS JS</h3>
@@ -43,31 +43,18 @@
             <h3>Cooking - Mihnea</h3>
             <p id="cooking_skills">My passion for cooking started when I was 11 and I made myself an egg. I was so proud of it and I started trying to make more elaborate types of food, and I mastered the art of cooking. I still have some things to learn but I can say I am pretty great at it and I occasionally bring food to Nick to help us focus on our work.</p>
           </div>
-        </div>
-        <div class="skill-row">
-            <img class="skill_img" src="basketball.webp" alt="basketball">
-            <h3>Basketball - Nick</h3>
-            <p id="basketball_skills">What could I even say about basketball? I started playing when I was in 5th grade. I remember back then I was upset by the fact that I was among the shortest in my team :) Not many things have changed since, except the fact that my technique has become way better than it was.</p>
           </div>
+           <div class="skill-row">
+              <img class="skill_img" src="basketball.webp" alt="basketball">
+              <h3>Basketball - Nick</h3>
+              <p id="basketball_skills">What could I even say about basketball? I started playing when I was in 5th grade. I remember back then I was upset by the fact that I was among the shortest in my team :) Not many things have changed since, except the fact that my technique has become way better than it was.</p>
+            </div>
+            <br>
+            <br>
         </div>
-        <br>
-        <br>
-        <script>
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
-          </script>
+        <div class="bottom_container">
+          <p id="credits">© 2020 Nick & Mihnea</p>
+          <br>
+        </div>
   </body>
 </html>
