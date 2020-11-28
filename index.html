@@ -9,6 +9,13 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <body>
+  <div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="https://www.fiverr.com/share/yWQXoZ">Hire us</a>
+    <a href="index2.html">About</a>
+    <a href="index3.html">Contact</a>
+  </div>
+  <br>
     <div class="top_container">
         <img src="cloud.png" class="small_cloud" alt="cloud_img" id="cloud1">
         <img src="cloud.png" class="big_cloud" alt="cloud_img" id="cloud2">
@@ -21,7 +28,7 @@
         <p> web developers</p>
         <img src="irimia.png" alt="Nick" class="dev_img" id="nick_img">
         <img src="zara.png" alt="Mihnea" class="dev_img" id="mihnea_img">
-        <img src="mountain.png" alt="mountain_img" class="mountain_img">
+        <img src="parallax.png" alt="parallax_img" class="parallax_img">
     </div>
     <div class="middle-container">
         <div class="skills">
@@ -32,9 +39,9 @@
             <p id="html_skills">Our passion for Web Design started when we were in 11th grade. Our Computer Science teacher asked us to code a web page using HTML. Both of us had the brilliant idea to team up and go over the limits and since our skills regarding web development kept evolving.</p>
           </div>
           <div class="skill-row">
-            <img class="" src="" alt="">
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+            <img class="skill_img" src="pan.gif" alt="pan">
+            <h3>Cooking - Mihnea</h3>
+            <p id="cooking_skills">My passion for cooking started when I was 11 and i made myself an egg. I was so proud of it and i started trying to make more elaborate types of food, and i mastered the art of cooking. I still have some things to learn but i can say i am pretty great at it and i occasionally bring food to Nick to help us focus on our work.</p>
           </div>
         </div>
         <div class="skill-row">
@@ -43,5 +50,24 @@
             <p id="basketball_skills">What could I even say about basketball? I started playing when I was in 5th grade. I remember back then I was upset by the fact that I was among the shortest in my team :) Not many things have changed since, except the fact that my technique has become way better than it was.</p>
           </div>
         </div>
-</body>
+        <br>
+        <br>
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+  </body>
 </html>

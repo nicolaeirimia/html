@@ -6,8 +6,31 @@ body{
 .top_container{
     background-color: #9ad3bc;
     position: relative;
-    padding-right: 5px;
     padding-top: 100px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+.navbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+.navbar a.active{
+    background-color: maroon;
+    color: white;
+}
+.navbar a:hover{
+    background-color: grey;
 }
 h1{
     font-size: 2rem;
@@ -43,18 +66,18 @@ p{
 }
 #cloud5{
     left: 10%;
-    top: 60%;
+    top: 40%;
 }
 #cloud6{
     right: 8%;
-    bottom: 20%;
+    bottom: 60%;
 }
 #cloud7{
     left: 50%;
-    bottom: 20%;
+    bottom: 45%;
 }
-.mountain_img{
-    width: auto;
+.parallax_img{
+    width: 100%;
     height: auto;
 }
 .dev_img{
@@ -81,25 +104,42 @@ p{
     text-align: justify;
     padding: 0 8px;
 }
+#cooking_skills{
+    text-align: justify;
+    padding: 0 8px;
+}
 @media only screen and (max-width:720px){
     .dev_img{
         width: 20%;;
     }
-    .mountain_img{
+    .parallax_img{
         width: 100%;
         height: auto;
     }
 }
 @media screen and (min-width: 540px) and (max-width: 540px) {
+    .top_container{
+        padding-top: 150px;
+    }
     .dev_img{
         width: 20%;;
     }
     #nick_img{
-        top: 4%;
+        top: 8%;
         left: 12%;
     }
     #mihnea_img{
-        top: 4%;
+        top: 8%;
         right: 12%;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 280px){
+    .navbar a {
+        float: left;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
     }
 }
