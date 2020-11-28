@@ -25,30 +25,6 @@ body{
 #skills_title{
     margin-top: 0;
 }
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    height: auto;
-}
-.navbar a {
-    float: left;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.navbar a.active{
-    background-color: maroon;
-    color: white;
-}
-.navbar a:hover{
-    background-color: grey;
-}
 h1{
     font-size: 2rem;
 }
